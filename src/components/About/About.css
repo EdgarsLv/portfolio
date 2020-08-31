@@ -36,6 +36,9 @@
 .nav-about li {
   margin: 0 auto 0;
 }
+.nav-about li i {
+  display: block;
+}
 .nav-about li a {
   display: block;
   padding: 0.5rem 1rem;

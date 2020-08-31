@@ -18,7 +18,7 @@
 .NavigationItem a.active {
   color: var(--primary-txt);
   border-bottom: 2px solid var(--primary-txt);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 55%, 100% 50%, 0 45%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 55%, 100% 50%, 0 45%); */
 }
 
 @media (min-width: 991px) {

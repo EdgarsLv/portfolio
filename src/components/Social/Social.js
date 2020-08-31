@@ -1,12 +1,15 @@
 import React, { Fragment } from "react";
 import { AiFillGithub, AiOutlineGithub, AiOutlineUsb } from "react-icons/ai";
+import "./Social.css";
 
 const Social = () => {
   return (
     <Fragment>
-      <i>
-        <AiFillGithub />
-      </i>
+      <a href="https://github.com/EdgarsLv/portfolio" target="blank">
+        <i className="soc">
+          <AiFillGithub />
+        </i>
+      </a>
       <i>
         <AiOutlineUsb />
       </i>

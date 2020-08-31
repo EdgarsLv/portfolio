@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./NavigationItems.module.css";
+import styles from "./Navigation.module.css";
 import NavigationItem from "./NavigationItem/NavItem";
 import { Roll } from "react-awesome-reveal";
 import {
