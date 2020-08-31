@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Layout from "./hoc/Layout/Layout";
+import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import About from "./components/About/About";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Services from "./components/servises/Services";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Testimonials from "./components/Testimonials/Testimonials";
+import Contacts from "./components/Contacts/Contacts";
+import Header from "./components/Header/Header";
+
+AOS.init();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Switch>
+          <Route path="/" exact component={Header} />
+          <Route path="/about" component={About} />
+          <Route path="/services" component={Services} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/testimonials" component={Testimonials} />
+          <Route path="/contacts" component={Contacts} />
+        </Switch>
+      </Layout>
     </div>
   );
 }

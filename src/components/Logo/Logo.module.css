@@ -1,0 +1,16 @@
+.Logo {
+  background-color: var(--accent-clr);
+  padding: 8px;
+  margin: 0 5px;
+  text-align: center;
+}
+.svg {
+  height: 70px;
+}
+
+.e {
+  fill: black;
+}
+.p {
+  fill: white;
+}

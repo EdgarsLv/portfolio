@@ -1,0 +1,16 @@
+.theme-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.theme-switch img {
+  height: 17px;
+  width: 17px;
+}

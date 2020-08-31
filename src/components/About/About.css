@@ -1,0 +1,174 @@
+.about-img {
+  position: relative;
+  margin-left: 0;
+  background: url(../../assets/images/imag.jpg);
+  height: 350px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  margin-bottom: 50px;
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    100% 0,
+    50% 5%,
+    0 0,
+    5% 50%,
+    0 100%,
+    50% 95%,
+    100% 100%,
+    95% 50%
+  );
+}
+.nav-about {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.178);
+  text-align: center !important;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.nav-about li {
+  margin: 0 auto 0;
+}
+.nav-about li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--primary-txt);
+  transition: all 0.2s ease-in;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease-in;
+}
+.nav-about li a:hover {
+  color: var(--accent-clr);
+  text-decoration: none;
+}
+.about-me {
+  padding: 30px 20px 0;
+  display: block;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+.about-me p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 1.2px;
+  color: var(--light-txt);
+  text-align: left !important;
+}
+.sig {
+  max-width: 119px;
+
+  height: auto;
+  border-style: none;
+  vertical-align: middle;
+}
+.profile {
+  padding: 30px 20px 0;
+  display: block;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+  margin-bottom: 50px;
+}
+.profile h6 {
+  padding: 6px 0;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+.info {
+  max-width: 145px;
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  text-align: left !important;
+}
+.profile h6 span {
+  color: var(--primary-txt);
+}
+.profile h6 span + span {
+  color: var(--light-txt);
+}
+.btn-about {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 2rem;
+}
+.btn-about a {
+  background: var(--accent-clr);
+  color: black;
+  text-transform: uppercase;
+  padding: 9px 25px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-about a:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: none;
+}
+.skills-tab {
+  padding: 30px 20px 0;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+.skills {
+  padding: 0 30px;
+  transition: all 0.3s ease-in;
+}
+.skills p {
+  color: var(--primary-txt);
+  margin-bottom: 8px;
+  line-height: 18px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  margin-top: 0;
+  font-weight: 400;
+}
+.progr {
+  margin-bottom: 17px;
+  height: 6px;
+  background: gray;
+  position: relative;
+}
+.progr-bar {
+  float: left;
+  height: 100%;
+  position: relative;
+  transition: all 1.5s ease 0.3s;
+}
+.progr-bar::before {
+  content: attr(data-resent);
+  position: absolute;
+  top: -18px;
+  color: var(--accent-clr);
+  left: calc(100% - 30px);
+}
+@media (min-width: 100px) and (max-width: 991px) {
+  /* .about {
+    padding-left: 0;
+  } */
+  .about-img {
+    width: 100%;
+  }
+  .about-me {
+    padding: 30px 0 0;
+    margin-bottom: 60px;
+  }
+  .profile {
+    margin-bottom: 60px;
+  }
+  .skills {
+    margin-bottom: 60px;
+  }
+}
