@@ -1,0 +1,41 @@
+.toolti {
+  position: absolute;
+  top: -110px;
+  left: 10%;
+  margin-right: 50px;
+  padding-bottom: 10px;
+  pointer-events: none;
+  color: var(--accent-clr);
+  background: white;
+  border: 1px solid var(--accent-clr);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 90%,
+    85% 90%,
+    85% 100%,
+    75% 90%,
+    0 90%
+  );
+}
+.toolti h2 {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+.toolti p {
+  line-height: 1.1;
+  margin: 0;
+  font-size: 12px;
+  margin: 0 15px 5px;
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
+@media (max-width: 425px) {
+  .toolti {
+    top: -125px;
+  }
+}

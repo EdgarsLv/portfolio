@@ -14,6 +14,7 @@ import Skills from "./Skills";
 class About extends Component {
   render() {
     const { path } = this.props.match;
+
     return (
       <div className="about">
         <Title title="About" content="About" />

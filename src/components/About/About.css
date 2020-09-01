@@ -38,6 +38,7 @@
 }
 .nav-about li i {
   display: block;
+  margin: 0 auto;
 }
 .nav-about li a {
   display: block;
@@ -45,7 +46,6 @@
   color: var(--primary-txt);
   transition: all 0.2s ease-in;
   border-top: 2px solid transparent;
-  transition: all 0.2s ease-in;
 }
 .nav-about li a:hover {
   color: var(--accent-clr);

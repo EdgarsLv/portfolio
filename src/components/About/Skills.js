@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ProgressLine from "./ProgressLine";
 import { Fade } from "react-awesome-reveal";
+import Tooltip from "../UI/Tooltip";
 
 const Skills = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    // const timeout = setTimeout(() => {
+    setShow(true);
+  }, []);
+
+  //   return () => clearTimeout(timeout);
+  // }, []);
+
+  console.log(show);
   return (
     <div className="skills-tab">
+      <Tooltip show={show} />
       <div data-aos="zoom-in" className="skills">
         <Fade cascade damping={0.1}>
           <p>Html</p>
