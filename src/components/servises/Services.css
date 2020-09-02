@@ -41,6 +41,7 @@
     100% 100%,
     95% 50%
   );
+  /* box-shadow: 0 0 15px 15px var(--accent-clr) inset; */
 }
 @media (min-width: 100px) and (max-width: 991px) {
   /* .services {

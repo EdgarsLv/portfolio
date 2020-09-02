@@ -7,6 +7,7 @@
 }
 .overlay {
   background: rgba(12, 12, 12, 0.322);
+  /* background: #7eb12b46; */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -101,6 +102,9 @@
   color: white;
   text-decoration: none;
 }
+.bg-logo {
+  display: none;
+}
 @media (min-width: 100px) and (max-width: 991px) {
   /* .header {
     padding-left: 0;
@@ -108,21 +112,31 @@
   .home-bg {
     width: 100%;
   }
-  .skewed {
-    display: none;
+  .bg-logo {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    background: var(--accent-clr);
+    text-align: start;
   }
+
+  /* .skewed {
+    display: none;
+  } */
   .overlay {
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 1;
     background: rgba(7, 7, 7, 0.39);
     clip-path: none;
+    /* clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0 100%, 0 25%); */
   }
   .my-bg {
     background-position: center center;
-    clip-path: none;
+    clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0 100%, 0 25%);
   }
   .bg-image {
     max-width: 400px;
@@ -140,19 +154,10 @@
     letter-spacing: 2px;
     color: white;
   }
-  /* .btn-home {
-    display: none;
-  } */
 }
 @media (min-width: 100px) and (max-width: 450px) {
   .bg-image {
     display: none;
-    /* max-width: 300px;
-    height: 200px;
-    left: 50%;
-    top: 80%; */
-
-    /* transform: translateX(-50%, ); */
   }
   .carousel {
     height: 200px;

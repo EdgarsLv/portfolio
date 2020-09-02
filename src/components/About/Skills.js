@@ -8,12 +8,8 @@ const Skills = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // const timeout = setTimeout(() => {
     setShow(true);
   }, []);
-
-  //   return () => clearTimeout(timeout);
-  // }, []);
 
   console.log(show);
   return (

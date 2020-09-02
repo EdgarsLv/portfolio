@@ -1,10 +1,11 @@
 :root {
   --primary-bg: #ececec;
   --primary-txt: black;
-  --accent-clr: #5f51db;
-  --title: #5656ec60;
+  --accent-clr: #7eb12b;
+  --title: #7eb12b44;
   --light-txt: rgb(99, 97, 97);
   --invert-txt: white;
+  --shadow: rgba(0, 0, 0, 0.24);
 }
 body[data-theme="dark"] {
   --primary-bg: #0f0e0e;
@@ -13,4 +14,7 @@ body[data-theme="dark"] {
   --title: #51811267;
   --light-txt: rgba(194, 193, 193, 0.986);
   --invert-txt: black;
+  --shadow: rgba(0, 0, 0, 0.89);
 }
+/* #5822bb */
+/* #ffc903 */

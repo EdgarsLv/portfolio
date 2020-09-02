@@ -2,6 +2,26 @@
   width: 130px;
   text-align: left;
 }
+/* .NavigationItem a::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  right: 5px;
+  width: 120px;
+  height: 50%;
+  background: transparent;
+  box-shadow: 0 0 5px 1px var(--primary-txt);
+  z-index: -1;
+  transition: all 0.2s ease-in;
+}
+.NavigationItem a:hover::after {
+  background: var(--primary-txt);
+  right: -2px;
+}
+.NavigationItem a.active::after {
+  background: var(--primary-txt);
+  right: -2px;
+} */
 .NavigationItem a {
   color: var(--invert-txt);
   text-decoration: none;

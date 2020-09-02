@@ -6,13 +6,15 @@ import TextTypo from "./TextTypo";
 import { motion } from "framer-motion";
 import Swap from "./Swap";
 import { Slide } from "react-awesome-reveal";
+import Logo from "../Logo/Logo";
 
 const Header = () => {
   return (
     <div className="header">
+      <div className="bg-logo">
+        <Logo />
+      </div>
       <div className="home-bg">
-        <div className="skewed"></div>
-
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -39,7 +41,6 @@ const Header = () => {
         <div className="btn-home">
           <Link to="/portfolio">portfolio</Link>
         </div>
-        {/* <Svg /> */}
       </div>
     </div>
   );
