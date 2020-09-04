@@ -17,10 +17,7 @@ const Profile = () => {
           <span className="info">Address:</span>
           <span>Riga, Valdlauci</span>
         </h6>
-        <h6>
-          <span className="info">Date:</span>
-          <span>15.08.2020</span>
-        </h6>
+
         <h6>
           <span className="info">Phone:</span>
           <span>+371 26190707</span>

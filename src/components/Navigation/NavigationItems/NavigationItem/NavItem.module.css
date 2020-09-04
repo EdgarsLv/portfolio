@@ -35,7 +35,22 @@
   border-bottom: 2px solid var(--primary-txt);
   background: var(--primary-bg);
 }
-
+/* @media (max-width: 420px) {
+  .NavigationItem {
+    width: 150px;
+  }
+  .NavigationItem a {
+    background: transparent;
+    color: var(--primary-txt);
+    font-size: 1.2rem;
+  }
+  .NavigationItem a:hover,
+  .NavigationItem a.active {
+    color: var(--accent-clr);
+    border-bottom: 2px solid var(--accent-clr);
+    background: none;
+  }
+} */
 @media (min-width: 991px) {
   .NavigationItem {
     text-align: center;

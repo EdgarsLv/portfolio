@@ -10,7 +10,9 @@
   right: 1rem;
   cursor: pointer;
 }
-.theme-switch img {
-  height: 17px;
-  width: 17px;
-}
+/* @media (max-width: 420px) {
+  .theme-switch {
+    justify-content: end;
+    align-items: baseline;
+  }
+} */

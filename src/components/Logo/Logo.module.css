@@ -1,5 +1,5 @@
 .Logo {
-  background-color: var(--accent-clr);
+  /* background: var(--accent-clr); */
   padding: 8px;
   margin: 0 5px;
   text-align: center;
@@ -14,3 +14,12 @@
 .p {
   fill: white;
 }
+/* @media (max-width: 420px) {
+  .svg {
+    height: 35px;
+  }
+  .Logo {
+    text-align: left;
+    padding-left: 5px;
+  }
+} */

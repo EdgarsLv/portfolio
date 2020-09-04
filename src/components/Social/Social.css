@@ -4,5 +4,5 @@
 
 .git:hover {
   transform: scale(1.3);
-  color: black;
+  color: var(--invert-txt);
 }

@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="bg-logo">
-        <Logo />
+        <Logo height="65px" />
       </div>
       <div className="home-bg">
         <motion.div

@@ -11,7 +11,6 @@ const Skills = () => {
     setShow(true);
   }, []);
 
-  console.log(show);
   return (
     <div className="skills-tab">
       <Tooltip show={show} />

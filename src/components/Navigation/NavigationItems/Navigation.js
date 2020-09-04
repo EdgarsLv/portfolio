@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navigation.module.css";
 import NavigationItem from "./NavigationItem/NavItem";
-import { Roll } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import {
   BsHouseDoor,
   BsGear,
@@ -13,7 +13,7 @@ import {
 
 const navigationItems = (props) => (
   <ul className={styles.NavigationItems}>
-    <Roll cascade damping={0.1}>
+    <Zoom direction="right" cascade damping={0.2}>
       <NavigationItem clicked={props.clicked} link="/" exact>
         <i>
           <BsHouseDoor />
@@ -55,7 +55,7 @@ const navigationItems = (props) => (
         </i>
         Contacts
       </NavigationItem>
-    </Roll>
+    </Zoom>
   </ul>
 );
 
