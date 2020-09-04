@@ -10,10 +10,16 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contacts from "./components/Contacts/Contacts";
 import Header from "./components/Header/Header";
+// import ReactGa from "react-ga";
 
 AOS.init();
 
 function App() {
+  // useEffect(() => {
+  //   ReactGa.initialize("UA-158929588-1");
+  //   ReactGa.pageview(window.location.pathname + window.location.search);
+  // }, []);
+
   return (
     <div className="App">
       <Layout>

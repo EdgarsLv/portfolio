@@ -6,9 +6,9 @@
   background-color: var(--primary-bg);
   z-index: 20;
   transition: all 0.2s ease-in;
-  background: url(../../../assets/images/smoke.png);
+  /* background: url(../../../assets/images/smoke.png);
   background-size: cover;
-  background-position: right center;
+  background-position: right center; */
 }
 
 .DekstopOnly {

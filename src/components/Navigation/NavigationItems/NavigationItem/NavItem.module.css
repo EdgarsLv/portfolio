@@ -5,22 +5,18 @@
 /* .NavigationItem a::after {
   content: "";
   position: absolute;
-  bottom: 25%;
-  right: 5px;
-  width: 120px;
-  height: 50%;
-  background: transparent;
-  box-shadow: 0 0 5px 1px var(--primary-txt);
-  z-index: -1;
+  top: 0;
+  left: calc(100% - 2px);
+  width: 2px;
+  height: 100%;
+  background: var(--primary-txt);
   transition: all 0.2s ease-in;
 }
 .NavigationItem a:hover::after {
-  background: var(--primary-txt);
-  right: -2px;
+  left: 0;
 }
 .NavigationItem a.active::after {
-  background: var(--primary-txt);
-  right: -2px;
+  left: 0;
 } */
 .NavigationItem a {
   color: var(--invert-txt);
@@ -32,13 +28,12 @@
   background: var(--accent-clr);
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease-in;
-  clip-path: none;
 }
 .NavigationItem a:hover,
 .NavigationItem a.active {
   color: var(--primary-txt);
   border-bottom: 2px solid var(--primary-txt);
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 55%, 100% 50%, 0 45%); */
+  background: var(--primary-bg);
 }
 
 @media (min-width: 991px) {
@@ -49,7 +44,22 @@
     color: var(--invert-txt);
     padding: 2px 0;
     font-size: 18px;
-    transition: all 0.3s ease-in;
+  }
+  .NavigationItem a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(100% - 2px);
+    width: 2px;
+    height: 100%;
+    background: var(--primary-txt);
+    transition: all 0.2s ease-in;
+  }
+  .NavigationItem a:hover::after {
+    left: 0;
+  }
+  .NavigationItem a.active::after {
+    left: 0;
   }
   .NavigationItem a::before {
     content: "";
@@ -59,7 +69,7 @@
     width: 0;
     height: 2px;
     background: var(--primary-txt);
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
   }
   .NavigationItem a:hover::before {
     left: 0;

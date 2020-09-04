@@ -13,7 +13,7 @@ const Swap = () => {
       slidesPerScroll={1}
       animationSpeed={1500}
       autoPlay={3000}
-      offset={5}
+      offset={0}
       centered
     >
       <img className="carousel" src={first} alt="first" />
