@@ -21,3 +21,7 @@ body[data-theme="dark"] {
 
 /* #303133 */
 /* #f1c322 */
+*:before,
+*:after {
+  overflow: hidden;
+}

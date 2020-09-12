@@ -1,3 +1,7 @@
+.header {
+  overflow: hidden;
+  /* height: 100vh; */
+}
 .home-bg {
   position: absolute;
   height: 100vh;
@@ -105,20 +109,27 @@
 .bg-logo {
   display: none;
 }
+.head-soc {
+  display: none;
+}
 @media (min-width: 100px) and (max-width: 991px) {
   /* .header {
-    padding-left: 0;
+    display: flex;
+    justify-content: center;
   } */
   .home-bg {
     width: 100%;
+    background: #0f0e0e;
   }
   .bg-logo {
+    margin-top: 5px;
     display: flex;
     position: absolute;
-    height: 100vh;
-    width: 50vw;
-    background: var(--accent-clr);
-    text-align: start;
+    z-index: 100;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* background: red; */
+    /* text-align: start; */
   }
 
   /* .skewed {
@@ -126,17 +137,41 @@
   } */
   .overlay {
     display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    /* position: absolute; */
+    width: 90%;
+    height: 60vh;
     z-index: 1;
+    bottom: 15%;
+    left: 5%;
     background: rgba(7, 7, 7, 0.39);
-    clip-path: none;
-    /* clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0 100%, 0 25%); */
+    clip-path: polygon(
+      100% 0,
+      50% 5%,
+      0 0,
+      5% 50%,
+      0 100%,
+      50% 95%,
+      100% 100%,
+      95% 50%
+    );
   }
   .my-bg {
+    width: 90%;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    height: 60vh;
     background-position: center center;
-    clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0 100%, 0 25%);
+    clip-path: polygon(
+      100% 0,
+      50% 5%,
+      0 0,
+      5% 50%,
+      0 100%,
+      50% 95%,
+      100% 100%,
+      95% 50%
+    );
   }
   .bg-image {
     max-width: 400px;
@@ -149,18 +184,47 @@
   .carousel {
     height: 267px;
   }
+  .title {
+    margin-left: 40px;
+  }
 
   .type {
     letter-spacing: 2px;
     color: white;
   }
 }
-@media (min-width: 100px) and (max-width: 450px) {
+@media (min-width: 100px) and (max-width: 420px) {
+  /* .home-bg {
+    background: #0f0e0e;
+  } */
   .bg-image {
     display: none;
   }
   .carousel {
     height: 200px;
     display: none;
+  }
+  .text {
+    font-size: 50px;
+  }
+  .head-soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    font-size: 25px;
+    background: black;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    color: var(--accent-clr);
+  }
+  .head-soc a {
+    color: var(--accent-clr);
+  }
+  .head-soc i {
+    margin: 0 7px;
   }
 }

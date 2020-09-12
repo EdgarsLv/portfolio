@@ -14,12 +14,18 @@
 .p {
   fill: white;
 }
-/* @media (max-width: 420px) {
-  .svg {
+@media (max-width: 420px) {
+  /* .svg {
     height: 35px;
   }
   .Logo {
     text-align: left;
     padding-left: 5px;
-  }
-} */
+  } */
+  /* .e {
+    fill: var(--primary-txt);
+  } */
+  /* .p {
+    fill: gray;
+  } */
+}

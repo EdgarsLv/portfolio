@@ -4,7 +4,12 @@ import { BsEnvelope, BsTablet, BsMap } from "react-icons/bs";
 const Info = () => {
   return (
     <div className="col-md-6 col-sm-12">
-      <div data-aos="zoom-in" data-aos-duration="700" className="infos">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="700"
+        // data-aos-delay="200"
+        className="infos"
+      >
         <h2>Edgars</h2>
         <div className="email">
           <i>

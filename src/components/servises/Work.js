@@ -15,7 +15,12 @@ const Work = (props) => {
   ];
 
   return (
-    <div data-aos="zoom-in" data-aos-duration="700" className="col-lg-6">
+    <div
+      data-aos="zoom-in"
+      data-aos-duration="700"
+      // data-aos-delay="200"
+      className="col-lg-6"
+    >
       <div className="content">
         <i className="web-dew">{pic[props.index]}</i>
         <h4>{props.title}</h4>

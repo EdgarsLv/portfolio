@@ -1,3 +1,7 @@
+.contacts {
+  overflow: hidden;
+  min-height: 100vh;
+}
 .infos {
   height: 95%;
   width: 100%;
@@ -125,6 +129,7 @@
   position: fixed;
   bottom: 0;
   left: 50%;
+  transform: translate(-50%, 0);
 }
 .footer p {
   color: var(--light-txt);
@@ -152,5 +157,6 @@
   .footer {
     position: unset;
     margin-top: 40px;
+    transform: translate(0);
   }
 }

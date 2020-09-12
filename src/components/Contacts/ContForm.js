@@ -96,6 +96,7 @@ class ContForm extends Component {
         <form
           data-aos="zoom-in"
           data-aos-duration="700"
+          // data-aos-delay="200"
           id="main-form"
           onSubmit={this.handleSubmit}
           noValidate

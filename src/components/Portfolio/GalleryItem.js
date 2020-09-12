@@ -6,7 +6,7 @@ const GalleryItem = () => {
     <div className="col-lg-4 col-md-6 col-sm-12">
       <div
         data-aos="zoom-in-up"
-        data-aos-delay="200"
+        // data-aos-delay="200"
         data-aos-duration="700"
         className="gallery-item"
       >

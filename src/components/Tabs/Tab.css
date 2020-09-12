@@ -1,0 +1,27 @@
+.tab-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+button {
+  padding: 0 10px;
+  background: var(--primary-bg);
+  border: none;
+  outline: none;
+  color: var(--primary-txt);
+}
+button:focus {
+  outline: none;
+}
+.icon {
+  margin-top: 5px;
+}
+
+@media (max-width: 991px) {
+  .icon {
+    display: block;
+    margin: auto;
+  }
+}

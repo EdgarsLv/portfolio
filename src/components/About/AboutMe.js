@@ -17,10 +17,6 @@ const AboutMe = () => {
           Ability to perform programmer tasks, find creative solutions and
           discuss practical issues within their competence.
         </p>
-        <p>
-          I would appreciate an invitation to an interview to evaluate my
-          candidacy for the vacancy.
-        </p>
       </Fade>
       <img className="sig" src="#" alt="Pucens" />
     </div>
