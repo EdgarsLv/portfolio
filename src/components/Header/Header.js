@@ -32,7 +32,7 @@ const Header = () => {
       className="header"
     >
       <div className="bg-logo">
-        <Logo height="45px" e="white" p="var(--accent-clr)" />
+        <Logo height="45px" e="var(--primary-txt)" p="var(--accent-clr)" />
       </div>
       <div className="home-bg">
         <div className="overlay"></div>

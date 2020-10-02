@@ -119,7 +119,7 @@
   } */
   .home-bg {
     width: 100%;
-    background: #0f0e0e;
+    background: var(--primary-bg);
   }
   .bg-logo {
     margin-top: 5px;
@@ -138,40 +138,25 @@
   .overlay {
     display: block;
     /* position: absolute; */
-    width: 90%;
-    height: 60vh;
+    width: 100%;
+    height: 100vh;
     z-index: 1;
-    bottom: 15%;
-    left: 5%;
-    background: rgba(7, 7, 7, 0.39);
-    clip-path: polygon(
-      100% 0,
-      50% 5%,
-      0 0,
-      5% 50%,
-      0 100%,
-      50% 95%,
-      100% 100%,
-      95% 50%
-    );
+    bottom: 0;
+    left: 0;
+    background-color: var(--overlay);
+
+    clip-path: none;
   }
   .my-bg {
-    width: 90%;
+    width: 100%;
     position: absolute;
-    bottom: 15%;
-    left: 5%;
-    height: 60vh;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    background-image: url(../../assets/images/about.jpg);
     background-position: center center;
-    clip-path: polygon(
-      100% 0,
-      50% 5%,
-      0 0,
-      5% 50%,
-      0 100%,
-      50% 95%,
-      100% 100%,
-      95% 50%
-    );
+
+    clip-path: none;
   }
   .bg-image {
     max-width: 400px;
@@ -190,7 +175,7 @@
 
   .type {
     letter-spacing: 2px;
-    color: white;
+    color: var(--primary-txt);
   }
 }
 @media (min-width: 100px) and (max-width: 420px) {
@@ -217,13 +202,14 @@
     right: 0;
     height: 60px;
     font-size: 25px;
-    background: black;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    color: var(--accent-clr);
+    /* background: black; */
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    color: var(--primary-txt);
+    z-index: 10;
   }
-  .head-soc a {
+  /* .head-soc a {
     color: var(--accent-clr);
-  }
+  } */
   .head-soc i {
     margin: 0 7px;
   }

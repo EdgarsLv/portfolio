@@ -6,6 +6,7 @@
   --light-txt: rgb(99, 97, 97);
   --invert-txt: white;
   --shadow: rgba(0, 0, 0, 0.24);
+  --overlay: rgba(255, 255, 255, 0.562);
 }
 body[data-theme="dark"] {
   --primary-bg: #0f0e0e;
@@ -15,6 +16,7 @@ body[data-theme="dark"] {
   --light-txt: rgba(194, 193, 193, 0.986);
   --invert-txt: black;
   --shadow: rgba(0, 0, 0, 0.89);
+  --overlay: rgba(0, 0, 0, 0.678);
 }
 /* #5822bb */
 /* #ffc903 */

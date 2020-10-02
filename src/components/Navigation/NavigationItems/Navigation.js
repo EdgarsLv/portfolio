@@ -13,7 +13,7 @@ import {
 
 const navigationItems = (props) => (
   <ul className={styles.NavigationItems}>
-    <Zoom direction="right" cascade damping={0.2}>
+    <Zoom direction="right" cascade damping={0.1}>
       <NavigationItem clicked={props.clicked} link="/" exact>
         <i>
           <BsHouseDoor />
