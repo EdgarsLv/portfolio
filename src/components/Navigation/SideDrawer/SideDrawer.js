@@ -11,7 +11,7 @@ const sideDrawer = (props) => {
   if (props.open) {
     attachedClasses = [styles.SideDrawer, styles.Open];
   }
-  console.log(props.open);
+
   return (
     <Fragment>
       <Backdrop show={props.open} clicked={props.closed} />
